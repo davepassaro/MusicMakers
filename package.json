@@ -1,0 +1,78 @@
+{
+  "name": "musicmakers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node scripts/server.js",
+    "build": "react-scripts build",
+    "dev-fe": "react-scripts start",
+    "dev-be": "nodemon scripts/server.js",
+    "test-fe": "react-scripts test",
+    "test-be": "mocha",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postinstall": "npm run build"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "formik": "^2.2.5",
+    "moment": "^2.29.1",
+    "mysql": "^2.18.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-keydown": "^1.9.12",
+    "react-loading": "^2.0.3",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.0",
+    "tone": "^14.7.58"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "acorn": "^7.3.1",
+    "mocha": "^8.2.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reed22/MusicMakers.git"
+  },
+  "author": "Dave Passaro, Reed Robinson, Dominic Lupo",
+  "license": "Unlicensed",
+  "bugs": {
+    "url": "https://github.com/Reed22/MusicMakers/issues"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:3001",
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6.0.0"
+  }
+}

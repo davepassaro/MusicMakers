@@ -1,0 +1,274 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html body {
+  background-color: silver;
+  padding: 0;
+  margin: 0;
+  margin-top: 56px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.polyrhythm {
+  margin-top: 106px;
+  width: 904px;
+  height: 154px;
+  display: flex;
+  flex-flow: row wrap;
+  border: solid;
+  border-width: 2px;
+}
+
+.polyrhythm-ctrl {
+  width: 300px;
+  height: 150px;
+  display: flex;
+}
+
+.polyrhythm-ctrl-btn {
+  width: 100px;
+  height: 150px;
+  background-color: white;
+  border-width: 0px;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  padding: 0px;
+  margin: 0px;
+}
+
+.polyrhythm-ctrl-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.polyrhythm-ctrl-btn:hover {
+  background-color: lightgray;
+  -webkit-transition: background-color 250ms linear;
+  -ms-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
+}
+
+.polyrhythm-ctrl-number {
+  width: 100px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.polyrhythm-button {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  border-width: 0px;
+}
+
+.polyrhythm-button:hover {
+  cursor: pointer;
+  font-size: 105px;
+}
+
+.piano,
+.octave {
+  justify-content: center;
+  display: flex;
+}
+
+.key {
+  height: calc(var(--width) * 4);
+  width: var(--width);
+}
+
+.black:hover {
+  cursor: pointer;
+}
+
+.white {
+  --width: 60px;
+  background-color: white;
+  border: 1px solid #333;
+}
+
+.black {
+  --width: 36px;
+  background-color: black;
+  margin-left: calc(var(--width) / -2);
+  margin-right: calc(var(--width) / -2);
+  z-index: 2;
+}
+
+.black:hover {
+  cursor: pointer;
+}
+
+.white:hover {
+  cursor: pointer;
+}
+
+.key p {
+  position: relative;
+  font-size: 20px;
+}
+
+.black p {
+  color: white;
+  top: 60%;
+  padding-left: calc(var(--width) / 3);
+}
+
+.white p {
+  color: black;
+  top: 73%;
+  padding-left: calc(var(--width) / 3);
+}
+
+.octave-identifier {
+  text-align: center;
+}
+
+.fretboard-wrapper {
+    display: grid;
+    grid-template-columns: 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7%;
+    grid-template-rows: 12% 12% 12% 12% 12% 12% 12%;
+    grid-gap: 3px;
+    color: #444;
+    
+  }
+ 
+
+
+
+ .fretboard-box {
+    background-color: #444;
+    color: rgb(20, 20, 16);
+    border-radius: 1px;
+    padding: 20px;
+    font-size: 150%;
+    text-align: center;
+    border-color: rgb(5, 4, 4);
+    
+  }
+  .fretboard-box-green {
+    background-color: rgb(26, 177, 119);
+    color: rgb(19, 9, 9);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font-size: 150%;
+  }
+  .fretboard-open{
+    border-radius:30px;color: red}
+.quiz-radio-item{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: rgb(138, 16, 16);
+  color: rgb(196, 22, 22);
+  font-size: 70%;
+  font-family: tahoma, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+.quiz-button{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #3f4137;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  /*width: 50px;*/
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+}
+.quiz-text{
+  
+  background: #333;
+  color: #ccc;
+  font-size: 100%;
+  font-family: tahoma, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 50px 0;
+}
+.fret-text{
+  
+  background: #333;
+  color: #ccc;
+  font-size: 90%;
+  font-family: tahoma, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+.quiz-text-radio{
+  font-size: 40px;
+}
+
+
+
+
+#profile {
+  width: 100vw;
+  display: inline-block;
+}
+
+#scale-form {
+  width: 50vw;
+}
+
+#custom-scales-container {
+  text-align: center;
+}
+
+.custom-play {
+  margin-left: 1vw;
+}
+
+#check-container {
+  padding-top: 2vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.piano-scale {
+  background-color: lightblue;
+  border: solid black 1px;
+  width: 82.15px;
+  text-align: center;
+}
+
+.piano-scale:hover {
+  cursor: pointer;
+  background-color: lightskyblue;
+}
+
+.octave-selector {
+  width: 32px;
+  border: solid black 1px;
+  background-color: lightblue;
+}
+
+.octave-selector:hover {
+  cursor: pointer;
+  background-color: lightskyblue;
+}
